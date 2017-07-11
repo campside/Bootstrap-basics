@@ -1,16 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 body {
-	padding-top: 50px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	margin: 0;
 }
 
 img {
 	max-width: 200px;
 }
 
-.navbar {
-	border-radius: 0;
-	border: 0;
+/** Header navigation **/
+
+header .navbar {
+	 padding: 20px 0;
+}
+
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+header .navbar-default .navbar-nav a {
+	color: white;
+	padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	color: #EEC856;
+	background: transparent;
+	border-bottom: 4px solid #EEC850;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+	font-weight: 700;
+	color: red;
+	background: transparent;
+	border-bottom: 4px solid #EEC850;
+}
+
+header .navbar-default .navbar-nav a:hover {
+	color: #EEC856;
+}
+
+header .navbar-right {
+	margin-right: 0;
 }
 
 footer .navbar-default {
-	background: transparent;
+	background-color: transparent;
+	border: none;
+}
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.page {
+	padding: 50px 0;
+}
+
+.page h2 {
+	text-align: center;
+	margin-bottom: 25px;
 }
