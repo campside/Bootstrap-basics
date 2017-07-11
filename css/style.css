@@ -1,5 +1,5 @@
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
 img {
@@ -9,4 +9,8 @@ img {
 .navbar {
 	border-radius: 0;
 	border: 0;
+}
+
+footer .navbar-default {
+	background: transparent;
 }

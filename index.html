@@ -36,13 +36,43 @@
             </div>
             <!-- container -->
         </nav>
-        <div class="carousel">
-            <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
-            <img src="images/carousel-mission.jpg" alt="Mission">
-            <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
-            <img src="images/carousel-fish.jpg" alt="Fish">
-            <img src="images/carousel-exoticanimals.jpg" alt="Exotic Animals">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel-lifestyle.jpg" alt="Lifestyle Photo">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-mission.jpg" alt="Mission">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-vaccinations.jpg" alt="Vaccinations">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-fish.jpg" alt="Fish">
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel-exoticanimals.jpg" alt="Exotic Animals">
+                    </div>
+                    <a class="left carousel-control" href="#carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- carousel-inner -->
+            </div>
+            <!-- container -->
         </div>
+        <!-- carousel slide -->
     </header>
     <div class="main">
         <div class="page" id="mission">
@@ -165,15 +195,23 @@
     <!-- main -->
     <footer>
         <div class="content container">
-            <div>Call us toll-free at <span class="phone">888-555-1212</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </nav>
-            <p>All contents &copy; 2017.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Call us toll-free at <span class="phone">888-555-1212</span></p>
+                    <p>All contents &copy; 2017.</p>
+                </div>
+                <div class="col-sm-6">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- row -->
         </div>
+        <!-- content container -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
