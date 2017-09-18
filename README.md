@@ -1,3 +1,3 @@
-Bootstrap practice session
+Практическое использование Bootstrap
 
-https://campside.github.io/resp-sp-design/
+https://campside.github.io/Bootstrap-basics/
